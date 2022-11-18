@@ -1,4 +1,155 @@
-.attribution { font-size: 11px; text-align: center; }
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 50px;
+}
+
+
+
+span.user-post {
+    font-weight: 800;
+}
+
+span.group {
+    color: var(--blue);
+    font-weight: 800;
+}
+
+.list .user-box .user-comment p  {
+    color: var(--dark-grayish-blue);
+}
+
+.list .user-box .user-comment p strong {
+    color: var(--very-dark-blue);
+}
+
+.list .user-box .user-comment small {
+    color: var(--grayish-blue);
+}
+
+.new {
+    background-color: var(--very-light-grayish-blue);
+}
+
+i {
+    color: var(--red);
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.message {
+    border: solid 1px var(--light-grayish-blue-2);
+    border-radius: 5px;
+    padding: 20px;
+}
+.image-comment {
+    position: absolute;
+    right: 20px;
+}
+
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    background: var(--very-light-grayish-blue);
+}
+
+.main {
+    margin: 80px auto;
+    background: var(--white);
+    max-width: 50%;
+    border-radius: 15px;
+}
+
+.main .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main .container .list-header {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .container .list-header h1 {
+    color: var(--very-dark-blue);
+}
+
+.main .container .list-header h1 .number {
+    color: var(--white);
+    font-size: 25px;
+    background-color: var(--blue);
+    margin-left: 15px;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.main .container .list-header .button {
+    font-size: inherit;
+    color: var(--grayish-blue);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.main .container .list-header .button:hover {
+    color: var(--blue);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list .user-box {
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+
+.list .user-box .user-comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+/* Footer */
+.attribution { 
+    margin: 50px 0;
+    font-size: 11px; 
+    text-align: center;
+ }
+
+
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
