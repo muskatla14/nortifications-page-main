@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
-
-
 :root {
     --red: hsl(1, 90%, 64%);
     --blue: hsl(219, 85%, 26%);
@@ -14,7 +12,6 @@
     --very-dark-blue: hsl(224, 21%, 14%);
 }
 
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -24,8 +21,6 @@
 img {
     width: 50px;
 }
-
-
 
 span.user-post {
     font-weight: 800;
@@ -63,11 +58,6 @@ i {
     border-radius: 5px;
     padding: 20px;
 }
-.image-comment {
-    position: absolute;
-    right: 20px;
-}
-
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -78,7 +68,7 @@ body {
 .main {
     margin: 80px auto;
     background: var(--white);
-    max-width: 50%;
+    max-width: 60%;
     border-radius: 15px;
 }
 
@@ -130,9 +120,7 @@ body {
     gap: 20px;
     border-radius: 10px;
     padding: 20px;
-    position: relative;
 }
-
 
 .list .user-box .user-comment {
     display: flex;
@@ -141,6 +129,9 @@ body {
     gap: 5px;
 }
 
+.list .user-box .image-comment {
+    margin-left: auto;
+}
 
 /* Footer */
 .attribution { 
@@ -149,10 +140,46 @@ body {
     text-align: center;
  }
 
-
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 .user-name {
     display: inline;
 }
+
+@media only screen and (max-width: 1024px) {
+    .main {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .main {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .main .container .list-header h1 {
+        font-size: 25px;
+    }
+
+    .main .container .list-header h1 .number {
+        font-size: 25px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .main .container .list-header h1 {
+        font-size: 18px;
+    }
+
+    .main .container .list-header h1 .number {
+        font-size: 18px;
+    }
+    .image-comment {
+        justify-self: self-end;
+        /* position: relative; */
+        /* padding-left: 20px; */
+    }
+  }
