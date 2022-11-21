@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution GitHub: [notrification-page-main](https://github.com/muskatla14/nortifications-page-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://muskatla14.github.io/nortifications-page-main/](https://muskatla14.github.io/nortifications-page-main/)
 
 ## My process
 
